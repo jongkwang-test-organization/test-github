@@ -3,7 +3,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Created by JongKwang on 09/11/2016.
+ * Created by JongKwang on 10/11/2016.
  */
 public class CalculatorTest {
     @Test
@@ -11,5 +11,7 @@ public class CalculatorTest {
         Calculator c = new Calculator();
         assertEquals(c.sum(1, 2), 3);
     }
+
+
 
 }

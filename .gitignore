@@ -16,3 +16,6 @@ hs_err_pid*
 *.iml
 .idea/
 .gradle/
+
+Calculator/gradle/
+Calculator/build/
