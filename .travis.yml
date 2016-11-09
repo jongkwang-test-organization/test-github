@@ -1,0 +1,17 @@
+#.travis.yml
+language: java
+jdk:
+    - oraclejdk8
+script:
+    - ./Calculator/gradlew check
+    - ./Calculator/gradlew assemble
+    - ./Calculator/gradlew test
+before_install:
+    - chmod +x ./Calculator/gradlew
+before_cache:
+  - rm -f  $HOME/Calculator/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/Calculator/.gradle/caches/*/plugin-resolution/
+cache:
+  directories:
+    - $HOME/Calculator/.gradle/caches/
+    - $HOME/Calculator/.gradle/wrapper/
